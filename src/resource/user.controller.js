@@ -27,7 +27,6 @@ const getUser = (req, res) => {
 }
 
 const createUser = (req, res) => {
-    console.log(req.body);
     const {name, mail, city} = req.body;
     // validación de los valores recibidos
     if(!(name && mail && city)) {
